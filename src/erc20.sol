@@ -13,7 +13,7 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-pragma solidity ^0.4.24;
+pragma solidity ^0.5.0;
 
 contract ERC20 {
     string  public name;
@@ -27,7 +27,7 @@ contract ERC20 {
     event Approval(address indexed src, address indexed guy, uint wad);
     event Transfer(address indexed src, address indexed dst, uint wad);
 
-    constructor(string symbol_, string name_) public {
+    constructor(string memory symbol_, string memory name_) public {
         symbol = symbol_;
         name = name_;
     }
